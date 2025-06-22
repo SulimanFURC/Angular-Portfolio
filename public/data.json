@@ -1,0 +1,195 @@
+{
+    "profile": {
+        "name": "Suliman Munawar khan",
+        "title": "Angular Consultant | Software Engineer",
+        "description": "I am a Full Stack Developer with a passion for building web applications and cloud solutions. I have experience in various programming languages and frameworks, and I enjoy working on projects that challenge my skills and creativity.",
+        "email": "sullaimaan@gmail.com",
+        "phone": "+92 302 5532270",
+        "location": "Islamabad, Pakistan",
+        "profileImage": "./Profile.jpg"
+    },
+
+    "home": {
+        "title": "Pinned Projects",
+        "pinnedProjects": [
+            {
+                "name": "Cloud Idea Generator",
+                "description": "CloudIdeaGeneration suggests tailored cloud project ideas based on provider, experience level, and services.",
+                "url": "https://github.com/SulimanFURC/cloud-insights-frontend",
+                "programmingLanguage": "Typescript"
+            },
+            {
+                "name": "Hostel Management System",
+                "description": "Hostel Management System streamlines room allocation, rent collection, student records, expenses, and report generation efficiently.",
+                "url": "https://github.com/SulimanFURC/HostelManagementSystem",
+                "programmingLanguage": "Javascript"
+            }
+        ]
+    },
+
+    "about": {
+        "title": "About Me",
+        "content": "I am an experienced software engineer with a passion for developing high-quality software solutions. I have a Bachelor's degree in Software Engineering and have been working in the field for over 5 years. Throughout my career, I have gained expertise in various technologies such as JavaScript, React, Node.js, Angular, and SQL. I have a proven track record of delivering scalable and robust applications by following industry best practices and standards. I have worked on multiple projects ranging from small-scale to enterprise-level and have gained valuable experience in designing and developing web and mobile applications. I am a strong believer in continuous learning and staying up-to-date with the latest advancements in technology. I am a skilled problem solver and enjoy working in a team environment where I can collaborate and contribute my expertise. Aside from my professional achievements, I enjoy traveling and exploring different cultures.",
+        "subHeading": "Core Competencies",
+        "competencies": [
+            { "name": "JavaScript (ES6+)", "icon": "fa-brands fa-js" },
+            { "name": "TypeScript", "icon": "fa-solid fa-code" },
+            { "name": "HTML5 / CSS3 / SCSS / SASS", "icon": "fa-brands fa-html5" },
+            { "name": "Responsive Web Design / Mobile Responsive Development", "icon": "fa-solid fa-mobile-screen" },
+            { "name": "Angular 14+", "icon": "fa-brands fa-angular" },
+            { "name": "Angular Ionic", "icon": "fa-brands fa-ionic" },
+            { "name": "React.js", "icon": "fa-brands fa-react" },
+            { "name": "jQuery", "icon": "fa-brands fa-js" },
+            { "name": "RESTful API Integration", "icon": "fa-solid fa-plug" },
+            { "name": "Node.js", "icon": "fa-brands fa-node-js" },
+            { "name": "Express.js", "icon": "fa-solid fa-server" },
+            { "name": "MySQL / MySQL Workbench", "icon": "fa-solid fa-database" },
+            { "name": "Prisma ORM (basic knowledge)", "icon": "fa-solid fa-database" },
+            { "name": "Git Version Control", "icon": "fa-brands fa-git-alt" },
+            { "name": "Bitbucket", "icon": "fa-brands fa-bitbucket" },
+            { "name": "Docker (containerizing Angular and Node apps)", "icon": "fa-brands fa-docker" },
+            { "name": "Microsoft Azure – App Services, Container Instances, Azure Virtual Desktop (AVD)", "icon": "fa-brands fa-microsoft" },
+            { "name": "OpenAI / Gemini API Integration", "icon": "fa-solid fa-robot" },
+            { "name": "Prompt Engineering (used in AI-based projects)", "icon": "fa-regular fa-lightbulb" },
+            { "name": "Power Virtual Agent", "icon": "fa-solid fa-robot" },
+            { "name": "Microsoft Power Automate", "icon": "fa-solid fa-gears" },
+            { "name": "SharePoint Development", "icon": "fa-brands fa-microsoft" },
+            { "name": "Multilingual App Handling", "icon": "fa-solid fa-language" },
+            { "name": "Agile Methodologies / Scrum", "icon": "fa-solid fa-people-group" },
+            { "name": "JIRA", "icon": "fa-brands fa-jira" }
+        ]
+    },
+
+    "experience": {
+        "title": "Work Experience",
+        "experienceList": [
+            {
+                "company": "Systems Ltd",
+                "designation": "Angular Consultant",
+                "duration": "Nov 2023 - Present",
+                "description": [
+                    "Contributing to the development of B2B applications across multiple projects tailored for business users.",
+                    "Managing and enhancing application modules deployed on self-service Kiosk systems to ensure reliability and user engagement.",
+                    "Driving performance optimization efforts for B2B applications, focusing on speed, responsiveness, and user experience.",
+                    "Actively contributing to the enhancement of core features and the scalability of existing enterprise systems.",
+                    "Delivered key components for an Affiliate Portal, ensuring seamless functionality and meeting business requirements.",
+                    "Collaborating closely with cross-functional teams to integrate APIs and implement clean, maintainable code in Angular and ReactJS environments."
+                ]
+            },
+            {
+                "company": "SAUFIK",
+                "designation": "Software Engineer (Angular Developer)",
+                "duration": "Oct 2022 - Oct 2023",
+                "description": [
+                    "Proficiently transform intricate UI/UX designs into dynamic, responsive front-end solutions utilizing HTML, CSS, JavaScript, Angular, and ReactJS.",
+                    "Successfully contribute to a portfolio of 4 diverse projects, each encompassing unique categories, and functionalities.",
+                    "Played an instrumental role in creating intuitive and engaging online learning web applications, elevating user experience and knowledge dissemination.",
+                    "Solely executed a SharePoint project, showcasing a high level of technical proficiency and problem-solving acumen.",
+                    "Collaborate seamlessly with cross-functional UX/UI teams to ensure pixel-perfect translation of designs into functional interfaces.",
+                    "Contribute actively to code reviews and debugging sessions, aligning codebase with best practices and maintainability standards."
+                ]
+            },
+            {
+                "company": "UtoR Solutions",
+                "designation": "Software Engineer (Frontend Developer)",
+                "duration": "Jan 2022 - Sep 2022",
+                "description": [
+                    "Proficiently transformed intricate Figma and XD designs into dynamic web applications utilizing HTML, CSS, JavaScript, and the Angular framework.", 
+                    "Led the successful execution of 3 major projects, each presenting unique challenges and objectives.",
+                    "Engineered an innovative online art marketplace, integrating a distinctive demo wall feature. This allowed users to visualize art pieces within their living spaces before purchasing, enhancing the buying experience.",
+                    "Designed and implemented a comprehensive dashboard for a multi-branch restaurant project spanning various regions and countries. The dashboard efficiently collated and presented branch data, optimizing decision-making processes.",
+                    "Collaborated closely with UX/UI teams, ensuring seamless alignment between designs and realized interfaces for superior user experiences.",
+                    "Actively contributed to code reviews, upholding coding standards, best practices, and robust development methodologies."
+                ]
+            },
+            {
+                "company": "Orcalo Holdings",
+                "designation": "Web Developer",
+                "duration": "Jan 2020 - Nov 2021",
+                "description": [
+                    "Developed user-facing features using React.js, Angular, Bootstrap, and CSS",
+                    "Optimized components for maximum performance across various devices and browsers",
+                    "Incorporated new features into existing source code, ensuring bug-free implementation",
+                    "Managed website development projects from design to completion with cross-browser compatibility",
+                    "Developed websites from frontend to backend using Core PHP, Codeigniter, JavaScript, jQuery, HTML/CSS",
+                    "Designed and maintained corporate and client websites with scripting languages and CMS like WordPress",
+                    "Implemented enhancements to improve web functionality and responsiveness."
+                ]
+            }
+           
+        ]
+    },
+
+    "Projects": {
+        "title": "All Projects",
+        "ProjectsLists": [
+            {
+                "name": "Cloud Idea Generator",
+                "description": "CloudIdeaGeneration suggests tailored cloud project ideas based on provider, experience level, and services.",
+                "url": "https://github.com/SulimanFURC/cloud-insights-frontend",
+                "liveUrl": "https://cloud-idea-generator.netlify.app/",
+                "languages": ["Typescript", "Angular", "Node.js", "Express.js", "MySQL"]
+            },
+            {
+                "name": "Hostel Management System",
+                "description": "Hostel Management System streamlines room allocation, rent collection, student records, expenses, and report generation efficiently.",
+                "url": "https://github.com/SulimanFURC/HostelManagementSystem",
+                "liveUrl": "",
+                "languages": ["Typescript", "Angular", "Node.js", "Express.js", "MySQL"]
+            },
+            {
+                "name": "Reid Health",
+                "description": "A full-featured healthcare website built for Reid Health. It provides intuitive tools for finding doctors, services, and locations, and offers secure access to patient records.",
+                "url": "",
+                "liveUrl": "https://reidhealth-dev.azurewebsites.net/home",
+                "languages": ["ReactJS", "HTML", "CSS", "JavaScript"]
+            }
+        ]
+    },
+
+    "Education": {
+        "title": "Education & Certifications",
+        "heading": "Formal Education",
+        "subHeading": "Certifications & Badges",
+        "educationList": [
+            {
+                "degree": "Bachelor of Software Engineering",
+                "institution": "Foundation University Islamabad",
+                "year": "2015 - 2019",
+                "description": "Graduated with a Bachelor's degree in Software Engineering, gaining a solid foundation in software development principles, programming languages, and project management."
+            }
+        ],
+        "Certifications": [
+            {
+                "name": "Artificial Intelligence Fundamentals",
+                "issuer": "IBM",
+                "link": "https://www.credly.com/badges/734120de-cc9e-49f8-b721-e49c8e1d4ba6/linked_in_profile",
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 32 32\"><path fill=\"currentColor\" d=\"M0 21.527h6.224v.889H0zm0-1.71h6.224v.891H0zm1.771-1.708h2.672v.896H1.771zm0-1.702h2.672v.896H1.771zm0-1.71h2.672v.896H1.771zm0-1.708h2.672v.896H1.771zM0 11.287h6.224v.896H0zm0-1.703h6.224v.889H0zm7.109 11.124h9.568c.161-.276.287-.577.359-.891H7.109zm8.823-4.301H8.891v.896h7.792a3.6 3.6 0 0 0-.745-.896zm-7.047-1.71v.896h7.047c.303-.249.547-.552.751-.896zm7.792-3.41H7.109v.896h9.921a3.6 3.6 0 0 0-.353-.896M13.74 9.584H7.109v.889h8.912a3.37 3.37 0 0 0-2.281-.889m-4.855 3.405h2.667v.896H8.885zm5.339.896h2.787a3.4 3.4 0 0 0 .12-.896h-2.907zm-5.339 4.224h2.667v.896H8.885zm5.339 0v.896h2.907c0-.308-.043-.609-.12-.896zm-7.115 4.303l6.625.004c.891 0 1.692-.337 2.292-.889H7.109zm10.672-.885h4.437v.889h-4.437zm0-1.71h4.437v.891h-4.437zm1.771-1.708h2.667v.896h-2.667zm0-1.702h2.667v.896h-2.667zm3.907-5.12h-5.677v.896h5.984zm-.59-1.703h-5.088v.889h5.396zm4.683 11.943H32v.889h-4.448zm0-1.71H32v.891h-4.448zm0-1.708h2.667v.896h-2.667zm0-1.702h2.667v.896h-2.667zm0-.814h2.667v-.896H25.14l-.255.724l-.249-.724h-5.084v.896h2.667v-.823l.287.823h4.765l.281-.823zm2.667-2.604H25.73l-.308.896h4.797zm-3.307-3.405l-.308.889H32v-.889zm-2.027 12.828l.308-.885h-.615zm-.588-1.704h1.181l.319-.891h-1.813zm-.6-1.703h2.381l.312-.896h-3.005zm-.593-1.702h3.573l.301-.896h-4.181zm-3.552-3.418h4.803l-.308-.896h-4.495zm6.464-1.702H32v-.896h-5.683z\"/></svg>"
+            },
+            {
+                "name": "Microsoft Azure Fundamentals: Describe cloud concepts",
+                "issuer": "Microsoft",
+                "link": "https://learn.microsoft.com/en-us/users/sulimanmunawarkhan-8836/achievements/9n2dbgfu",
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 256 256\"><path fill=\"#f1511b\" d=\"M121.666 121.666H0V0h121.666z\"/><path fill=\"#80cc28\" d=\"M256 121.666H134.335V0H256z\"/><path fill=\"#00adef\" d=\"M121.663 256.002H0V134.336h121.663z\"/><path fill=\"#fbbc09\" d=\"M256 256.002H134.335V134.336H256z\"/></svg>"
+            },
+            {
+                "name": "Integrate SharePoint and Power Automate",
+                "issuer": "Microsoft",
+                "link": "https://learn.microsoft.com/en-us/users/sulimanmunawarkhan-8836/achievements/y7z7d2yr",
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 256 256\"><path fill=\"#f1511b\" d=\"M121.666 121.666H0V0h121.666z\"/><path fill=\"#80cc28\" d=\"M256 121.666H134.335V0H256z\"/><path fill=\"#00adef\" d=\"M121.663 256.002H0V134.336h121.663z\"/><path fill=\"#fbbc09\" d=\"M256 256.002H134.335V134.336H256z\"/></svg>"
+            },
+            {
+                "name": "Advanced React",
+                "issuer": "META",
+                "link": "https://www.coursera.org/account/accomplishments/verify/795RW668CEDG",
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 256 171\"><defs><linearGradient id=\"logosMetaIcon0\" x1=\"13.878%\" x2=\"89.144%\" y1=\"55.934%\" y2=\"58.694%\"><stop offset=\"0%\" stop-color=\"#0064e1\"/><stop offset=\"40%\" stop-color=\"#0064e1\"/><stop offset=\"83%\" stop-color=\"#0073ee\"/><stop offset=\"100%\" stop-color=\"#0082fb\"/></linearGradient><linearGradient id=\"logosMetaIcon1\" x1=\"54.315%\" x2=\"54.315%\" y1=\"82.782%\" y2=\"39.307%\"><stop offset=\"0%\" stop-color=\"#0082fb\"/><stop offset=\"100%\" stop-color=\"#0064e0\"/></linearGradient></defs><path fill=\"#0081fb\" d=\"M27.651 112.136c0 9.775 2.146 17.28 4.95 21.82c3.677 5.947 9.16 8.466 14.751 8.466c7.211 0 13.808-1.79 26.52-19.372c10.185-14.092 22.186-33.874 30.26-46.275l13.675-21.01c9.499-14.591 20.493-30.811 33.1-41.806C161.196 4.985 172.298 0 183.47 0c18.758 0 36.625 10.87 50.3 31.257C248.735 53.584 256 81.707 256 110.729c0 17.253-3.4 29.93-9.187 39.946c-5.591 9.686-16.488 19.363-34.818 19.363v-27.616c15.695 0 19.612-14.422 19.612-30.927c0-23.52-5.484-49.623-17.564-68.273c-8.574-13.23-19.684-21.313-31.907-21.313c-13.22 0-23.859 9.97-35.815 27.75c-6.356 9.445-12.882 20.956-20.208 33.944l-8.066 14.289c-16.203 28.728-20.307 35.271-28.408 46.07c-14.2 18.91-26.324 26.076-42.287 26.076c-18.935 0-30.91-8.2-38.325-20.556C2.973 139.413 0 126.202 0 111.148z\"/><path fill=\"url(#logosMetaIcon0)\" d=\"M21.802 33.206C34.48 13.666 52.774 0 73.757 0C85.91 0 97.99 3.597 110.605 13.897c13.798 11.261 28.505 29.805 46.853 60.368l6.58 10.967c15.881 26.459 24.917 40.07 30.205 46.49c6.802 8.243 11.565 10.7 17.752 10.7c15.695 0 19.612-14.422 19.612-30.927l24.393-.766c0 17.253-3.4 29.93-9.187 39.946c-5.591 9.686-16.488 19.363-34.818 19.363c-11.395 0-21.49-2.475-32.654-13.007c-8.582-8.083-18.615-22.443-26.334-35.352l-22.96-38.352C118.528 64.08 107.96 49.73 101.845 43.23c-6.578-6.988-15.036-15.428-28.532-15.428c-10.923 0-20.2 7.666-27.963 19.39z\"/><path fill=\"url(#logosMetaIcon1)\" d=\"M73.312 27.802c-10.923 0-20.2 7.666-27.963 19.39c-10.976 16.568-17.698 41.245-17.698 64.944c0 9.775 2.146 17.28 4.95 21.82L9.027 149.482C2.973 139.413 0 126.202 0 111.148C0 83.772 7.514 55.24 21.802 33.206C34.48 13.666 52.774 0 73.757 0z\"/></svg>"
+            },
+            {
+                "name": "MOOC: SQL Fundamentals",
+                "issuer": "Oracle",
+                "link": "https://www.credly.com/badges/80349713-8cbd-420b-847d-38664f4a6e8a/linked_in_profile",
+                "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 512 67\"><path fill=\"#ea1b22\" d=\"M221.034 43.303h33.832l-17.889-28.781l-32.833 52.037h-14.942l39.935-62.508c1.736-2.525 4.63-4.051 7.84-4.051c3.104 0 5.998 1.473 7.682 3.946l40.093 62.613H269.81l-7.05-11.628h-34.253zM376.251 54.93V.631h-12.68v59.614c0 1.631.631 3.21 1.841 4.42s2.841 1.894 4.63 1.894h57.825l7.472-11.628zm-209.78-9.734c12.313 0 22.31-9.944 22.31-22.256c0-12.313-9.997-22.31-22.31-22.31h-55.473v65.93h12.676v-54.3h41.956c5.893 0 10.628 4.789 10.628 10.682c0 5.892-4.735 10.68-10.628 10.68l-35.747-.052l37.851 32.99h18.416l-25.466-21.362zM32.97 66.559C14.77 66.56 0 51.827 0 33.622C0 15.416 14.77.632 32.97.632h38.32c18.204 0 32.963 14.784 32.963 32.99c0 18.205-14.759 32.937-32.964 32.937zm37.468-11.628c11.791 0 21.341-9.524 21.341-21.31S82.228 12.26 70.437 12.26h-36.62c-11.787 0-21.342 9.576-21.342 21.362S22.03 54.93 33.816 54.93zm240.78 11.628c-18.204 0-32.99-14.732-32.99-32.937c0-18.206 14.786-32.99 32.99-32.99h45.514l-7.42 11.628H312.06c-11.786 0-21.362 9.576-21.362 21.362s9.576 21.309 21.362 21.309h45.723l-7.472 11.628zm155.06-11.628c-9.734 0-17.995-6.524-20.52-15.522h54.194l7.471-11.628h-61.665c2.525-8.945 10.786-15.521 20.52-15.521h37.2L511 .63h-45.565c-18.205 0-32.99 14.785-32.99 32.99s14.785 32.938 32.99 32.938h39.094L512 54.931z\"/></svg>"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+<header class="bg-[#161b22] border-b border-[#30363d] px-4 md:px-6 py-3 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .prompt {
+                        fill: currentColor;
+                    }
+
+                    .cursor {
+                        fill: currentColor;
+                        animation: blink 1.2s infinite step-end;
+                    }
+
+                    @keyframes blink {
+                        50% {
+                            opacity: 0;
+                        }
+                    }
+                </style>
+                <!-- The prompt symbol ( > ) -->
+                <path d="M20 30 L45 50 L20 70" class="prompt"></path>
+
+                <!-- The blinking cursor ( _ ) -->
+                <rect x="55" y="30" width="25" height="10" class="cursor"></rect>
+            </svg>
+            <span class="text-white font-semibold text-lg">Suliman Munawar khan</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a (click)="navigateToHome()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.HOME) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">Home</a>
+            <a (click)="navigateToAbout()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.ABOUT) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">About</a>
+            <a (click)="navigateToExperience()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.EXPERIENCE) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">Experience</a>
+            <a (click)="navigateToProject()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.PROJECTS) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">Projects</a>
+            <a (click)="navigateToEducation()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.EDUCATION) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">Education</a>
+            <a (click)="navigateToContact()" href="javascript:void(0)"
+                [class]="'transition-colors tab-item ' + (isActive(path.CONTACT) ? 'tab-active text-white' : 'text-gray-300 hover:text-white')">Contact</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button (click)="toggleMobileMenu()" class="md:hidden text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden mt-2 mobile-menu" [ngClass]="{'open': isMobileMenuOpen, 'closed': !isMobileMenuOpen}">
+        <a (click)="navigateToHome(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.HOME) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">Home</a>
+        <a (click)="navigateToAbout(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.ABOUT) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">About</a>
+        <a (click)="navigateToExperience(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.EXPERIENCE) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">Experience</a>
+        <a (click)="navigateToProject(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.PROJECTS) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">Projects</a>
+        <a (click)="navigateToEducation(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.EDUCATION) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">Education</a>
+        <a (click)="navigateToContact(); toggleMobileMenu()" href="javascript:void(0)"
+            [class]="'block py-2 px-4 text-sm rounded ' + (isActive(path.CONTACT) ? 'bg-gray-700 text-white' : 'text-gray-300 hover:bg-gray-700')">Contact</a>
+    </div>
+</header>

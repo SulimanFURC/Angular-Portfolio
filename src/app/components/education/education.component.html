@@ -1,0 +1,73 @@
+<section id="education">
+    <h2 class="text-xl font-semibold mb-4 text-gray-100">{{education?.title}}</h2>
+
+    <div class="mb-8">
+        <h3 class="text-lg font-semibold text-gray-200 mb-3">{{education?.heading}}</h3>
+        <div class="border-l-2 border-[#30363d] pl-6">
+            @for (edu of education?.educationList; track $index) {
+            <div class="timeline-item relative">
+                <div class="absolute -left-[35px] top-1 h-4 w-4 bg-gray-500 rounded-full border-4 border-[#0d1117]">
+                </div>
+                <h4 class="text-lg font-bold text-gray-100">{{edu?.degree}}</h4>
+                <p class="font-medium text-gray-400">{{edu?.institution}} | {{edu?.year}}</p>
+                <p class="mt-2 text-gray-300 text-sm">{{edu?.description}}</p>
+            </div>
+            }
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold text-gray-200 mb-3">{{education?.subHeading}}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Certification 1 -->
+            @for (cert of education?.Certifications; track $index) {
+                <div class="cert-card border p-4 rounded-lg flex items-center gap-4 hover:bg-[#161b22] transition-colors">
+                <!-- <img src="/public/angular.svg" alt="AWS Logo" style="height: 64px; width: 64px;"
+                    class="w-16 h-16 rounded-md"> -->
+                <span [innerHTML]="cert?.safeIcon"></span>
+                <div>
+                    <h4 class="font-bold text-gray-100">{{cert?.name}}</h4>
+                    <p class="text-sm text-gray-400">{{cert?.issuer}}</p>
+                    <a [href]="cert?.link" class="text-xs text-[#58a6ff] hover:underline mt-1 inline-block" target="_blank">
+                        Verify Credential &rarr;
+                    </a>
+                </div>
+            </div>
+            }
+            <!-- Certification 2 -->
+            <!-- <div class="cert-card border p-4 rounded-lg flex items-center gap-4 hover:bg-[#161b22] transition-colors">
+                <img src="https://placehold.co/64x64/326ce5/ffffff?text=K8s" alt="Kubernetes Logo"
+                    class="w-16 h-16 rounded-md">
+                <div>
+                    <h4 class="font-bold text-gray-100">Certified Kubernetes Application Developer (CKAD)</h4>
+                    <p class="text-sm text-gray-400">The Linux Foundation</p>
+                    <a href="#" class="text-xs text-[#58a6ff] hover:underline mt-1 inline-block">Verify Credential
+                        &rarr;</a>
+                </div>
+            </div> -->
+            <!-- Certification 3 -->
+            <!-- <div class="cert-card border p-4 rounded-lg flex items-center gap-4 hover:bg-[#161b22] transition-colors">
+                <img src="https://placehold.co/64x64/4285f4/ffffff?text=GCP" alt="GCP Logo"
+                    class="w-16 h-16 rounded-md">
+                <div>
+                    <h4 class="font-bold text-gray-100">Professional Cloud Developer</h4>
+                    <p class="text-sm text-gray-400">Google Cloud</p>
+                    <a href="#" class="text-xs text-[#58a6ff] hover:underline mt-1 inline-block">Verify Credential
+                        &rarr;</a>
+                </div>
+            </div> -->
+            <!-- Certification 4 -->
+            <!-- <div class="cert-card border p-4 rounded-lg flex items-center gap-4 hover:bg-[#161b22] transition-colors">
+                <img src="https://placehold.co/64x64/0078d4/ffffff?text=Azure" alt="Azure Logo"
+                    class="w-16 h-16 rounded-md">
+                <div>
+                    <h4 class="font-bold text-gray-100">Azure Fundamentals (AZ-900)</h4>
+                    <p class="text-sm text-gray-400">Microsoft</p>
+                    <a href="#" class="text-xs text-[#58a6ff] hover:underline mt-1 inline-block">Verify Credential
+                        &rarr;</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,18 @@
+<section id="experience">
+    <h2 class="text-xl font-semibold mb-4 text-gray-100">{{experience?.title}}</h2>
+    <div class="border-l-2 border-[#30363d] pl-6 space-y-8">
+        <!-- Timeline Item 1 -->
+        @for (exp of experience?.experienceList; track exp) {
+        <div class="timeline-item relative">
+            <div class="absolute -left-[35px] top-1 h-4 w-4 bg-gray-500 rounded-full border-4 border-[#0d1117]"></div>
+            <h3 class="text-lg font-bold text-gray-100">{{exp?.designation}}</h3>
+            <p class="font-medium text-gray-400">{{exp?.company}} | {{exp?.duration }}</p>
+            <ul class="list-disc pl-5 mt-2 text-gray-300 space-y-1 text-sm">
+                @for (projectDesc of exp?.description; track projectDesc) {
+                <li>{{projectDesc}}</li>
+                }
+            </ul>
+        </div>
+        }
+    </div>
+</section>
