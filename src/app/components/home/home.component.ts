@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ProfileDataService } from '../../model/profile-data.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,16 +8,27 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-
+export class HomeComponent implements OnInit, OnDestroy {
   homeData: any;
+  private dataSub?: Subscription;
 
-  ngOnInit(): void { 
-    const data = localStorage.getItem('profileData') ? JSON.parse(localStorage.getItem('profileData')!) : null;
-    this.homeData = data?.home || null;
+  constructor(private profileDataService: ProfileDataService) {}
+
+  ngOnInit(): void {
+    this.dataSub = this.profileDataService.data$.subscribe(data => {
+      this.homeData = data?.home || null;
+    });
+    // If data is not loaded yet, trigger load
+    if (!this.profileDataService.getData()) {
+      this.profileDataService.loadData();
+    }
   }
 
-  ngAfterViewInit(): void { 
+  ngOnDestroy(): void {
+    this.dataSub?.unsubscribe();
+  }
+
+  ngAfterViewInit(): void {
     this.generateContributionGraph();
   }
 

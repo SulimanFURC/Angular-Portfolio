@@ -1,30 +1,31 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { ProfileDataService } from '../../model/profile-data.service';
 
 @Component({
   selector: 'app-profile-sidebar',
-  imports: [],
   templateUrl: './profile-sidebar.component.html',
   styleUrl: './profile-sidebar.component.css'
 })
-export class ProfileSidebarComponent {
-
+export class ProfileSidebarComponent implements OnInit, OnDestroy {
   profileData: any;
-  constructor(private http: HttpClient, private router: Router) {}
+  private dataSub?: Subscription;
 
-  
-  ngOnInit(): void { 
-    this.http.get<any>('/data.json').subscribe({
-      next: (data) => {
-        this.profileData = data?.profile;
-        localStorage.setItem('profileData', JSON.stringify(data));
-      },
-      error: (error) => {
-        console.error('Error fetching home data:', error);
-      } 
+  constructor(private profileDataService: ProfileDataService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.dataSub = this.profileDataService.data$.subscribe(data => {
+      this.profileData = data?.profile || null;
     });
-  } 
+    if (!this.profileDataService.getData()) {
+      this.profileDataService.loadData();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.dataSub?.unsubscribe();
+  }
 
   navigateToContact() {
     this.router.navigate(['/contact']);
