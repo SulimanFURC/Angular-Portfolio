@@ -131,6 +131,13 @@
                 "languages": ["Typescript", "Angular", "Node.js", "Express.js", "MySQL"]
             },
             {
+                "name": "Document Q&A Assistant",
+                "description": "A full-stack app using Angular, Node.js, and RAG with OpenAI. Users upload PDFs and ask questions via a chat interface. Redis Stack enables fast, context-aware document retrieval.",
+                "url": "https://github.com/SulimanFURC/qa-doc-frontend",
+                "liveUrl": "",
+                "languages": ["Angular", "Typescript", "Node.js", "Express.js", "Redis Stack", "OpenAI"]
+            },
+            {
                 "name": "Hostel Management System",
                 "description": "Hostel Management System streamlines room allocation, rent collection, student records, expenses, and report generation efficiently.",
                 "url": "https://github.com/SulimanFURC/HostelManagementSystem",
