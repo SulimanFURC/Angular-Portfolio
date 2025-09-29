@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
-
 /* Using a font similar to GitHub's UI for a more authentic feel */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 
 html {
     scroll-behavior: smooth;

@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ProfileDataService } from '../../model/profile-data.service';
 import { Subscription } from 'rxjs';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-education',
@@ -9,28 +9,25 @@ import { Subscription } from 'rxjs';
   templateUrl: './education.component.html',
   styleUrl: './education.component.css'
 })
-export class EducationComponent implements OnInit, OnDestroy {
+export class EducationComponent implements OnInit {
   education: any;
   private dataSub?: Subscription;
 
-  constructor(private sanitizer: DomSanitizer, private profileDataService: ProfileDataService) {}
+  constructor(private sanitizer: DomSanitizer, private educationService: DataService) {}
 
   ngOnInit(): void {
-    this.dataSub = this.profileDataService.data$.subscribe(data => {
-      this.education = data?.Education || null;
-      if (this.education?.Certifications) {
+    this.getEducation();
+  }
+
+  getEducation() {
+    this.educationService.getEducation().subscribe((res: any) => {
+      this.education = res;
+       if (this.education?.Certifications) {
         this.education.Certifications = this.education.Certifications.map((cert: any) => ({
           ...cert,
           safeIcon: cert.icon ? this.sanitizer.bypassSecurityTrustHtml(cert.icon) : null
         }));
       }
-    });
-    if (!this.profileDataService.getData()) {
-      this.profileDataService.loadData();
-    }
-  }
-
-  ngOnDestroy(): void {
-    this.dataSub?.unsubscribe();
+    })
   }
 }

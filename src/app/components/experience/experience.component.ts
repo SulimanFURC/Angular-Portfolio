@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProfileDataService } from '../../model/profile-data.service';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-experience',
@@ -8,22 +8,19 @@ import { Subscription } from 'rxjs';
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
-export class ExperienceComponent implements OnInit, OnDestroy {
+export class ExperienceComponent implements OnInit {
   experience: any;
   private dataSub?: Subscription;
 
-  constructor(private profileDataService: ProfileDataService) {}
+  constructor(private experienceService: DataService) {}
 
   ngOnInit(): void {
-    this.dataSub = this.profileDataService.data$.subscribe(data => {
-      this.experience = data?.experience || null;
-    });
-    if (!this.profileDataService.getData()) {
-      this.profileDataService.loadData();
-    }
+    this.getExperience();
   }
 
-  ngOnDestroy(): void {
-    this.dataSub?.unsubscribe();
+  getExperience() {
+    this.experienceService.getExperience().subscribe((res: any) => {
+      this.experience = res;
+    })
   }
 }

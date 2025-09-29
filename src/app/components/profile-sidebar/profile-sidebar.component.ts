@@ -1,30 +1,27 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { ProfileDataService } from '../../model/profile-data.service';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-profile-sidebar',
   templateUrl: './profile-sidebar.component.html',
   styleUrl: './profile-sidebar.component.css'
 })
-export class ProfileSidebarComponent implements OnInit, OnDestroy {
+export class ProfileSidebarComponent implements OnInit {
   profileData: any;
   private dataSub?: Subscription;
 
-  constructor(private profileDataService: ProfileDataService, private router: Router) {}
+  constructor(private sidebarData: DataService, private router: Router) {}
 
   ngOnInit(): void {
-    this.dataSub = this.profileDataService.data$.subscribe(data => {
-      this.profileData = data?.profile || null;
-    });
-    if (!this.profileDataService.getData()) {
-      this.profileDataService.loadData();
-    }
+    this.getSidebarData();
   }
 
-  ngOnDestroy(): void {
-    this.dataSub?.unsubscribe();
+  getSidebarData() {
+    this.sidebarData.getProfile().subscribe((res: any) => {
+      this.profileData = res;
+    })
   }
 
   navigateToContact() {

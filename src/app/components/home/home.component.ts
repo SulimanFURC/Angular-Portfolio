@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProfileDataService } from '../../model/profile-data.service';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,24 +8,20 @@ import { Subscription } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
   homeData: any;
   private dataSub?: Subscription;
 
-  constructor(private profileDataService: ProfileDataService) {}
+  constructor(private homeDataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataSub = this.profileDataService.data$.subscribe(data => {
-      this.homeData = data?.home || null;
-    });
-    // If data is not loaded yet, trigger load
-    if (!this.profileDataService.getData()) {
-      this.profileDataService.loadData();
-    }
+    this.getHomeData();
   }
 
-  ngOnDestroy(): void {
-    this.dataSub?.unsubscribe();
+  getHomeData() {
+    this.homeDataService.getHome().subscribe((res: any) => {
+      this.homeData = res;
+    })
   }
 
   ngAfterViewInit(): void {

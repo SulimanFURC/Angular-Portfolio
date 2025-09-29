@@ -1,6 +1,6 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ProfileDataService } from '../../model/profile-data.service';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-about',
@@ -8,22 +8,21 @@ import { Subscription } from 'rxjs';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent implements OnInit, OnDestroy {
+export class AboutComponent implements OnInit {
   about: any;
   private dataSub?: Subscription;
 
-  constructor(private profileDataService: ProfileDataService) {}
+  constructor(private aboutData: DataService) {}
 
   ngOnInit(): void {
-    this.dataSub = this.profileDataService.data$.subscribe(data => {
-      this.about = data?.about || null;
-    });
-    if (!this.profileDataService.getData()) {
-      this.profileDataService.loadData();
-    }
+    this.getAboutData();
   }
 
-  ngOnDestroy(): void {
-    this.dataSub?.unsubscribe();
+  getAboutData() {
+    this.aboutData.getAbout().subscribe((res: any) => {
+      this.about = res;
+      console.log("About Data: ", this.about);
+    })
+    
   }
 }
