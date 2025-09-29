@@ -1,7 +1,7 @@
 {
     "profile": {
         "name": "Suliman Munawar khan",
-        "title": "Angular Consultant | Software Engineer",
+        "title": "Frontend Consultant | ReactJS | NextJS | Angular | Software Engineer",
         "description": "I am a Full Stack Developer with a passion for building web applications and cloud solutions. I have experience in various programming languages and frameworks, and I enjoy working on projects that challenge my skills and creativity.",
         "email": "sullaimaan@gmail.com",
         "phone": "+92 302 5532270",
@@ -29,9 +29,13 @@
 
     "about": {
         "title": "About Me",
-        "content": "I am an experienced software engineer with a passion for developing high-quality software solutions. I have a Bachelor's degree in Software Engineering and have been working in the field for over 5 years. Throughout my career, I have gained expertise in various technologies such as JavaScript, React, Node.js, Angular, and SQL. I have a proven track record of delivering scalable and robust applications by following industry best practices and standards. I have worked on multiple projects ranging from small-scale to enterprise-level and have gained valuable experience in designing and developing web and mobile applications. I am a strong believer in continuous learning and staying up-to-date with the latest advancements in technology. I am a skilled problem solver and enjoy working in a team environment where I can collaborate and contribute my expertise. Aside from my professional achievements, I enjoy traveling and exploring different cultures.",
-        "subHeading": "Core Competencies",
-        "competencies": [
+        "content": "I am an experienced software engineer with a passion for developing high-quality software solutions. I have a Bachelor's degree in Software Engineering and have been working in the field for over 6 years. Throughout my career, I have gained expertise in various technologies such as JavaScript, React, Node.js, Angular, and SQL. I have a proven track record of delivering scalable and robust applications by following industry best practices and standards. I have worked on multiple projects ranging from small-scale to enterprise-level and have gained valuable experience in designing and developing web and mobile applications. I am a strong believer in continuous learning and staying up-to-date with the latest advancements in technology. I am a skilled problem solver and enjoy working in a team environment where I can collaborate and contribute my expertise. Aside from my professional achievements, I enjoy traveling and exploring different cultures.",
+        "frontendHeading": "Frontend",
+        "backendHeading": "Backend",
+        "toolsAndPlatformHeading": "Tools & Platforms",
+        "AIHeading": "AI & Cloud Integration",
+        "otherHeading": "Others",
+        "frontend": [
             { "name": "JavaScript (ES6+)", "icon": "fa-brands fa-js" },
             { "name": "TypeScript", "icon": "fa-solid fa-code" },
             { "name": "HTML5 / CSS3 / SCSS / SASS", "icon": "fa-brands fa-html5" },
@@ -40,23 +44,44 @@
             { "name": "Angular Ionic", "icon": "fa-brands fa-ionic" },
             { "name": "React.js", "icon": "fa-brands fa-react" },
             { "name": "jQuery", "icon": "fa-brands fa-js" },
-            { "name": "RESTful API Integration", "icon": "fa-solid fa-plug" },
+            { "name": "Tailwind", "icon": "fa-brands fa-tailwind" },
+            { "name": "RESTful API Integration", "icon": "fa-solid fa-plug" }
+        ],
+        "backend": [
             { "name": "Node.js", "icon": "fa-brands fa-node-js" },
             { "name": "Express.js", "icon": "fa-solid fa-server" },
+            { "name": "GraphQL (Basic)", "icon": "fa-brands fa-graphql" },
+            { "name": "MongoDB", "icon": "fa-solid fa-database" },
+            { "name": "PostgreSQL", "icon": "fa-solid fa-database" },
             { "name": "MySQL / MySQL Workbench", "icon": "fa-solid fa-database" },
-            { "name": "Prisma ORM (basic knowledge)", "icon": "fa-solid fa-database" },
+            { "name": "Prisma ORM (basic knowledge)", "icon": "fa-solid fa-database" }
+        ],
+        "toolsAndPlatform": [
             { "name": "Git Version Control", "icon": "fa-brands fa-git-alt" },
             { "name": "Bitbucket", "icon": "fa-brands fa-bitbucket" },
             { "name": "Docker (containerizing Angular and Node apps)", "icon": "fa-brands fa-docker" },
-            { "name": "Microsoft Azure – App Services, Container Instances, Azure Virtual Desktop (AVD)", "icon": "fa-brands fa-microsoft" },
+            { "name": "Azure (App Services, AVD, Containers)", "icon": "fa-brands fa-microsoft" },
+            { "name": "JIRA", "icon": "fa-brands fa-jira" }
+
+        ],
+        "ai": [
             { "name": "OpenAI / Gemini API Integration", "icon": "fa-solid fa-robot" },
             { "name": "Prompt Engineering (used in AI-based projects)", "icon": "fa-regular fa-lightbulb" },
+            { "name": "AI Chatbot Development", "icon": "fa-regular fa-lightbulb" },
+            { "name": "Azure AI Services (basic)", "icon": "fa-regular fa-lightbulb" }
+        ],
+        "others": [
             { "name": "Power Virtual Agent", "icon": "fa-solid fa-robot" },
             { "name": "Microsoft Power Automate", "icon": "fa-solid fa-gears" },
             { "name": "SharePoint Development", "icon": "fa-brands fa-microsoft" },
             { "name": "Multilingual App Handling", "icon": "fa-solid fa-language" },
             { "name": "Agile Methodologies / Scrum", "icon": "fa-solid fa-people-group" },
-            { "name": "JIRA", "icon": "fa-brands fa-jira" }
+            { "name": "Cross-Browser Compatibility", "icon": "fa-solid fa-people-group" },
+            { "name": "Multilingual App Handling", "icon": "fa-solid fa-people-group" },
+            { "name": "Performance Optimization", "icon": "fa-solid fa-people-group" },
+            { "name": "Analyse software specifications", "icon": "fa-solid fa-people-group" },
+            { "name": "Design process", "icon": "fa-solid fa-people-group" },
+            { "name": "Attention to detail", "icon": "fa-solid fa-people-group" }
         ]
     },
 
@@ -65,6 +90,7 @@
         "experienceList": [
             {
                 "company": "Systems Ltd",
+                "comapnyWebsite": "https://systemsltd.com/",
                 "designation": "Angular Consultant",
                 "duration": "Nov 2023 - Present",
                 "description": [
@@ -78,6 +104,7 @@
             },
             {
                 "company": "SAUFIK",
+                "comapnyWebsite": "https://www.saufik.com/",
                 "designation": "Software Engineer (Angular Developer)",
                 "duration": "Oct 2022 - Oct 2023",
                 "description": [
@@ -91,6 +118,7 @@
             },
             {
                 "company": "UtoR Solutions",
+                "comapnyWebsite": "https://utordigital.com/",
                 "designation": "Software Engineer (Frontend Developer)",
                 "duration": "Jan 2022 - Sep 2022",
                 "description": [
@@ -104,6 +132,7 @@
             },
             {
                 "company": "Orcalo Holdings",
+                "comapnyWebsite": "",
                 "designation": "Web Developer",
                 "duration": "Jan 2020 - Nov 2021",
                 "description": [

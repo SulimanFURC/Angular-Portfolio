@@ -2,9 +2,58 @@
     <h2 class="text-xl font-semibold mb-4 text-gray-100">{{about?.title}}</h2>
     <div class="space-y-4 text-gray-300">
         <p>{{about?.content}}</p>
-        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.subHeading}}</h3>
+        <!-- Frontend Skills -->
+        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.frontendHeading}}</h3>
         <div class="flex flex-wrap gap-2">
-            @for(skills of about?.competencies; track skills) {
+            @for(skills of about?.frontend; track skills) {
+    
+            <span class="pill-badge">
+                <i [class]="skills?.icon"></i>
+                {{skills.name}}
+            </span>
+            }
+        </div>
+
+        <!-- Backend Skills -->
+        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.backendHeading}}</h3>
+        <div class="flex flex-wrap gap-2">
+            @for(skills of about?.backend; track skills) {
+               
+                <span class="pill-badge">
+                     <i [class]="skills?.icon"></i>
+                     {{skills.name}}
+                </span>
+            }
+        </div>
+
+        <!-- Tools And Platforms Skills -->
+        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.toolsAndPlatformHeading}}</h3>
+        <div class="flex flex-wrap gap-2">
+            @for(skills of about?.toolsAndPlatform; track skills) {
+               
+                <span class="pill-badge">
+                     <i [class]="skills?.icon"></i>
+                     {{skills.name}}
+                </span>
+            }
+        </div>
+
+        <!-- AI and Cloud Integration Skills -->
+        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.AIHeading}}</h3>
+        <div class="flex flex-wrap gap-2">
+            @for(skills of about?.ai; track skills) {
+               
+                <span class="pill-badge">
+                     <i [class]="skills?.icon"></i>
+                     {{skills.name}}
+                </span>
+            }
+        </div>
+
+        <!-- Other Skills -->
+        <h3 class="text-lg font-semibold pt-4 text-gray-100">{{about?.otherHeading}}</h3>
+        <div class="flex flex-wrap gap-2">
+            @for(skills of about?.others; track skills) {
                
                 <span class="pill-badge">
                      <i [class]="skills?.icon"></i>
